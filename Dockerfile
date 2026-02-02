@@ -1,6 +1,12 @@
-FROM node:24-alpine
+FROM node:24-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN npm ci
 COPY . .
-CMD ["npm", "start"]
+RUN npm run build
+
+FROM node:24-alpine
+WORKDIR /app
+COPY --from=builder /app/dist ./dist
+RUN npm install -g serve
+CMD ["serve", "-s", "dist", "-l", "5170"]
