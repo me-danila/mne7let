@@ -133,7 +133,7 @@ export function Wishlist() {
                         💝
                     </motion.div>
 
-                    <div className="relative z-10 text-center">
+                    <div className="relative z-10 text-center flex flex-col items-center">
                         <h3 className="font-['Comfortaa'] font-bold mb-4"
                             style={{fontSize: 'clamp(1.5rem, 3vw, 2.2rem)'}}>
                             Главное — это вы!
@@ -143,7 +143,7 @@ export function Wishlist() {
                             Вишлист — это просто идеи. Самый лучший подарок для Артема — это ваше присутствие на
                             празднике и радостные воспоминания! 🎈
                         </p>
-                        <a href={"https://followish.io/app/wishlists/eqwzjxrsi0jivx"} target="_blank" className={"mt-8 px-4 py-3 bg-blue-400 text-center text-xs rounded-xl text-white"}>Ссылка на вишлист</a>
+                        <a href={"https://followish.io/app/wishlists/eqwzjxrsi0jivx"} target="_blank" className={"mt-6 w-xs px-4 py-3 bg-blue-400 text-center text-xs rounded-xl text-white"}>Ссылка на вишлист</a>
                     </div>
                 </motion.div>
 
