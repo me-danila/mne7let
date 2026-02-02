@@ -143,24 +143,25 @@ export function Wishlist() {
                             Вишлист — это просто идеи. Самый лучший подарок для Артема — это ваше присутствие на
                             празднике и радостные воспоминания! 🎈
                         </p>
+                        <a href={"https://followish.io/app/wishlists/eqwzjxrsi0jivx"} target="_blank" className={"mt-auto px-4 py-3 bg-blue-400 text-center text-xs rounded-xl text-white"}>Ссылка на вишлист</a>
                     </div>
                 </motion.div>
 
 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-                    {wishlistItems.map((item, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{opacity: 0, y: 30}}
-                            whileInView={{opacity: 1, y: 0}}
-                            viewport={{once: true}}
-                            transition={{delay: index * 0.05, duration: 0.5}}
-                            whileHover={{scale: 1.05, rotate: selectedGift === index ? 0 : 2}}
-                            onClick={() => setSelectedGift(selectedGift === index ? null : index)}
-                            className={`relative bg-white rounded-3xl p-4 shadow-xl border-4 ${
-                                selectedGift === index ? 'border-purple-200' : 'border-purple-200'
-                            } cursor-pointer transition-all duration-300 flex flex-col`}
-                        >
+                {/*<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">*/}
+                {/*    {wishlistItems.map((item, index) => (*/}
+                {/*        <motion.div*/}
+                {/*            key={index}*/}
+                {/*            initial={{opacity: 0, y: 30}}*/}
+                {/*            whileInView={{opacity: 1, y: 0}}*/}
+                {/*            viewport={{once: true}}*/}
+                {/*            transition={{delay: index * 0.05, duration: 0.5}}*/}
+                {/*            whileHover={{scale: 1.05, rotate: selectedGift === index ? 0 : 2}}*/}
+                {/*            onClick={() => setSelectedGift(selectedGift === index ? null : index)}*/}
+                {/*            className={`relative bg-white rounded-3xl p-4 shadow-xl border-4 ${*/}
+                {/*                selectedGift === index ? 'border-purple-200' : 'border-purple-200'*/}
+                {/*            } cursor-pointer transition-all duration-300 flex flex-col`}*/}
+                {/*        >*/}
                             {/* Selected indicator */}
                             {/*{selectedGift === index && (*/}
                             {/*    <motion.div*/}
@@ -173,20 +174,20 @@ export function Wishlist() {
                             {/*)}*/}
 
                             {/* Content */}
-                            <h3 className="font-['Comfortaa'] font-bold text-blue-900 mb-2 text-center"
-                                style={{fontSize: '1.2rem'}}>
-                                {item.name}
-                            </h3>
-                            <p className="font-['Patrick Hand'] text-gray-600 text-center mb-4"
-                               style={{fontSize: '0.95rem'}}>
-                                {item.price}
-                            </p>
+                            {/*<h3 className="font-['Comfortaa'] font-bold text-blue-900 mb-2 text-center"*/}
+                            {/*    style={{fontSize: '1.2rem'}}>*/}
+                            {/*    {item.name}*/}
+                            {/*</h3>*/}
+                            {/*<p className="font-['Patrick Hand'] text-gray-600 text-center mb-4"*/}
+                            {/*   style={{fontSize: '0.95rem'}}>*/}
+                            {/*    {item.price}*/}
+                            {/*</p>*/}
 
                             {/* Button */}
-                            <a href={item.link} target="_blank" className={"mt-auto px-4 py-3 bg-blue-400 text-center text-xs rounded-xl text-white"}>Ссылка на магазин</a>
-                        </motion.div>
-                    ))}
-                </div>
+                            {/*<a href={item.link} target="_blank" className={"mt-auto px-4 py-3 bg-blue-400 text-center text-xs rounded-xl text-white"}>Ссылка на магазин</a>*/}
+                        {/*</motion.div>*/}
+                    {/*))}*/}
+                {/*</div>*/}
             </div>
         </section>
     );
