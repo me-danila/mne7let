@@ -1,0 +1,8 @@
+services:
+  mne7let:
+    build: .
+    image: mne7let:latest
+    container_name: mne7let
+    ports:
+      - "5170:5170"
+    restart: unless-stopped

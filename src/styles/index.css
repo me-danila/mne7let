@@ -1,0 +1,30 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Custom styles for smooth scrolling and animations */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+/* Remove scrollbar for a cleaner look but keep functionality */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f97316, #ec4899);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ea580c, #db2777);
+}
